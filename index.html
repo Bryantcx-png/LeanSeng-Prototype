@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联成鱼行 | 槟城冷冻海产批发</title>
+  <meta name="description" content="马来西亚槟城优质冷冻海产供应商，专供餐馆、批发商及家庭用户。可通过 WhatsApp 下单。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="container nav-inner">
+      <div class="nav-logo" onclick="showPage('home')">
+        <img src="assets/logo.png" alt="联成鱼行" class="nav-logo-img" />
+        <span class="nav-logo-name">联成鱼行</span>
+      </div>
+
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#" class="active" onclick="showPage('home'); return false;">首页</a></li>
+          <li><a href="#" onclick="showPage('products'); return false;">产品</a></li>
+          <li><a href="#" onclick="showPage('about'); return false;">关于我们</a></li>
+          <li><a href="#" onclick="showPage('contact'); return false;">联系我们</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="切换菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════
+       HOME PAGE
+  ═══════════════════════════════════════════════ -->
+  <div class="page active" id="page-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="hero-badge">槟城，马来西亚 · 家族企业</div>
+          <h1>来自大海的<em>鲜味</em>，<br>急冻为您保留。</h1>
+          <p class="hero-sub">槟城冷冻海产批发 · Pembekal Makanan Laut Beku</p>
+          <p class="hero-desc">优质冷冻海产，专供槟城餐馆、批发商及家庭用户。品质可靠，价格合理。</p>
+          <div class="hero-ctas">
+            <a href="#" class="btn-primary" onclick="showPage('products'); return false;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              浏览产品
+            </a>
+            <a href="#" class="btn-outline" onclick="showPage('contact'); return false;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              WhatsApp 订购
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <div class="container stats-inner">
+        <div class="stat-item">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">年行业经验</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">种产品供应</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">B2B</span>
+          <span class="stat-label">餐饮批发</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">🚚</span>
+          <span class="stat-label">送货与自取</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why us -->
+    <section class="section">
+      <div class="container">
+        <p class="section-tag">为何选择我们</p>
+        <h2 class="section-title">家族企业。<br>品质保证。</h2>
+        <p class="section-desc">数十年来，我们为槟城的小贩摊、餐馆及家庭提供新鲜冷冻海产。</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>新鲜保证</h3>
+            <p>所有产品在最新鲜时急速冷冻，并严格遵守冷链保存标准。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>服务所有顾客</h3>
+            <p>无论是餐馆、餐饮业者还是家庭用户，我们一律欢迎。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>送货与自取</h3>
+            <p>我们提供上门送货服务，也可在槟城门市自取。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>扎根槟城</h3>
+            <p>本地扎根，自豪地服务槟城及周边地区。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.44 2 2 0 0 1 3.64 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>WhatsApp 轻松下单</h3>
+            <p>只需 WhatsApp 联系我们，回复迅速，下单方便，毫无烦恼。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="cta-strip">
+      <div class="container">
+        <p class="section-tag" style="color: rgba(74,158,224,0.8);">准备好了吗？</p>
+        <h2 class="section-title">立即联系我们。</h2>
+        <p class="section-desc">通过 WhatsApp 联系我们，询问订单、价格或批发详情，我们会迅速回复。</p>
+        <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">联系我们</a>
+      </div>
+    </section>
+
+  </div><!-- /page-home -->
+
+
+  <!-- ═══════════════════════════════════════════════
+       PRODUCTS PAGE
+  ═══════════════════════════════════════════════ -->
+  <div class="page" id="page-products">
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>我们的产品</h1>
+        <p>优质冷冻海产——适合餐馆、批发商及家庭厨房。</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-tag">产品目录</p>
+        <h2 class="section-title">我们的供货</h2>
+        <p class="section-desc">完整价格表及详细产品列表即将推出。以下为产品类别概览——如需了解现有库存及批量价格，请联系我们。</p>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-img">🐟</div>
+            <div class="product-body">
+              <h3>整条鱼</h3>
+              <p>急冻整条鱼，多种鱼类可供选择</p>
+              <span class="product-badge">新鲜现货</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🦐</div>
+            <div class="product-body">
+              <h3>虾类</h3>
+              <p>多种规格——带壳及去壳均有</p>
+              <span class="product-badge">批发</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🦑</div>
+            <div class="product-body">
+              <h3>鱿鱼与墨鱼</h3>
+              <p>已处理及未处理均可供应</p>
+              <span class="product-badge">新鲜现货</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🦀</div>
+            <div class="product-body">
+              <h3>螃蟹与贝类</h3>
+              <p>泥蟹、花蟹等多种类</p>
+              <span class="product-badge">季节性供应</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🐡</div>
+            <div class="product-body">
+              <h3>鱼片</h3>
+              <p>无骨鱼片，零售及批量包装均有</p>
+              <span class="product-badge">批发</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🐚</div>
+            <div class="product-body">
+              <h3>蛤蜊与贻贝</h3>
+              <p>急冻，即可烹饪</p>
+              <span class="product-badge">新鲜现货</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coming-soon-box">
+          <p>完整产品目录及价格即将推出。如需了解现有库存及批发价格，请直接联系我们。</p>
+          <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">WhatsApp 查询</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-products -->
+
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT PAGE
+  ═══════════════════════════════════════════════ -->
+  <div class="page" id="page-about">
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>关于我们</h1>
+        <p>以新鲜、诚信与社区为本的家族企业。</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-text">
+            <div class="lang-switcher">
+              <button class="lang-btn active" onclick="switchLang('zh', this)">中文</button>
+              <button class="lang-btn" onclick="switchLang('en', this)">English</button>
+              <button class="lang-btn" onclick="switchLang('ms', this)">Bahasa</button>
+            </div>
+
+            <div id="about-zh">
+              <h2>联成鱼行</h2>
+              <p>我们是一家位于马来西亚槟城的家族式冷冻海产贸易公司，多年来专为餐馆、餐饮业者、批发商及家庭用户提供新鲜优质的冷冻海产。</p>
+              <p>我们的产品直接来自可信赖的供应商，并严格遵守冷链标准，确保每一份海产都保持最佳新鲜度。</p>
+              <p>我们提供送货上门及自取服务，欢迎随时通过 WhatsApp 联系我们查询或下单。</p>
+            </div>
+
+            <div id="about-en" style="display:none;">
+              <h2>联成鱼行 — Lean Seng Frozen Sea Product</h2>
+              <p>We are a family-run frozen seafood trading business based in Penang, Malaysia. For years, we have been supplying fresh, high-quality frozen seafood to restaurants, F&B businesses, wholesale buyers, and households across the region.</p>
+              <p>Our products are sourced directly from trusted suppliers and handled with strict cold-chain standards — so every piece of seafood you receive is as fresh as it can be.</p>
+              <p>We serve customers in English, 中文, and Bahasa Malaysia, and offer both delivery and self-pickup options for your convenience.</p>
+            </div>
+
+            <div id="about-ms" style="display:none;">
+              <h2>Lean Seng Frozen Sea Product</h2>
+              <p>Kami adalah perniagaan keluarga yang menjual produk makanan laut beku berkualiti tinggi di Pulau Pinang, Malaysia. Selama bertahun-tahun, kami telah membekalkan makanan laut segar kepada restoran, pemborong, dan isi rumah di seluruh kawasan.</p>
+              <p>Semua produk kami diperolehi daripada pembekal yang dipercayai dan diuruskan dengan piawaian rantaian sejuk yang ketat untuk memastikan kesegaran maksimum.</p>
+              <p>Kami menawarkan perkhidmatan penghantaran dan pengambilan sendiri. Hubungi kami melalui WhatsApp untuk pertanyaan atau pesanan.</p>
+            </div>
+
+            <div class="lang-badges">
+              <span class="lang-badge">中文</span>
+              <span class="lang-badge">English</span>
+              <span class="lang-badge">Bahasa Malaysia</span>
+            </div>
+          </div>
+
+          <div class="about-info-cards">
+            <div class="about-info-card">
+              <div class="a-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <h4>家族经营</h4>
+                <p>扎根槟城，用心服务每一位顾客。</p>
+              </div>
+            </div>
+            <div class="about-info-card">
+              <div class="a-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>位于马来西亚槟城</h4>
+                <p>为本地社区提供送货及自取服务。</p>
+              </div>
+            </div>
+            <div class="about-info-card">
+              <div class="a-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <h4>冷链品质管控</h4>
+                <p>从产地到餐桌严格把关——新鲜有保障。</p>
+              </div>
+            </div>
+            <div class="about-info-card">
+              <div class="a-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h4>欢迎所有顾客</h4>
+                <p>餐馆、批发商及家庭用户——一律欢迎。</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-about -->
+
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT PAGE
+  ═══════════════════════════════════════════════ -->
+  <div class="page" id="page-contact">
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>联系我们</h1>
+        <p>通过 WhatsApp 下单或联系我们咨询。</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-wa-card">
+            <h2>WhatsApp 下单</h2>
+            <p>联系我们最快捷的方式。发送消息后，我们将尽快回复库存及价格详情。</p>
+            <!-- REPLACE +60XXXXXXXXX with real WhatsApp number -->
+            <a href="https://wa.me/60XXXXXXXXX?text=您好，我想查询贵店的冷冻海产产品。" target="_blank" class="wa-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              立即 WhatsApp 联系
+            </a>
+            <p class="wa-note">请将代码中的号码替换为实际 WhatsApp 号码。</p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>地址</h4>
+                <!-- REPLACE with actual address -->
+                <p>马来西亚槟城<br><em style="font-size:11px; color: #9CA3AF;">（完整地址待补充）</em></p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <div>
+                <h4>送货与自取</h4>
+                <p>我们提供上门送货及槟城门市自取服务。</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <h4>服务对象</h4>
+                <p>餐馆、餐饮业者、批发商及家庭用户。</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h4>沟通语言</h4>
+                <p>我们以中文、英语及马来语提供服务。</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-contact -->
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 联成冷冻海产贸易（马）有限公司 · 马来西亚槟城</p>
+      <div class="footer-right">
+        <a href="#">中文</a>
+        <a href="#">EN</a>
+        <a href="#">BM</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
